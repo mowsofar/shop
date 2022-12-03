@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+.block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #bfb19d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+    background-color: #bfb19d;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 15px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Century Gothic";
+    font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+    background-color: #968a74;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 380px;
+    border: 2px solid #bfb19d;
+    margin: 100px;
+    background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover {
+    box-shadow:  5px 5px 5px 3px rgba(0,0,0,0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+    display: flex;
+    height: 60%;
+    align-items: center;
 }
+
+.desc {
+    padding-left: 12px;
+}
+
+.price {
+    margin-top: 15px;
+}
+
+.title {
+}
+
+.image img {
+    width: 130px;
+    padding-left: 70px;
+}
+
+/*TopPanel*/
+
+.top-panel {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+
+}
+
+.top-panel img {
+    padding-left: 20px;
+    height: 60px;
+}
+
+.links {
+    color: black;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+Link {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+
+}
+Link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.76);
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+Link:hover:after,
+Link:focus:after {
+    width: 100%;
+}
+
+/*Homepage*/
+
+.banner img {
+    width: 100%;
+}
+
+.active {
+    color: #968a74;
+    cursor: default;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item .image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.item img {
+    width: 400px;
+}
+
+.options {
+    padding-left: 40px;
+}
+
+.category span{
+    padding: 0 12px;
+    background: #d7cab0;
+    font-size: 25px;
+}
+
+.options .title {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.options .price {
+    color: #443e36;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.options button {
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e3d6bf;
+    color: #443e36;
+}
+
+.item-image {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.category-page {
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
